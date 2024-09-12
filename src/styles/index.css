@@ -1,0 +1,26 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+:root {
+  --font-fam-1: "Abril Fatface", serif;
+  --font-fam-2: "Vollkorn", serif;
+  --font-fam-3: "Inter", sans-serif;
+  --font-fam-4: "Shantell Sans", sans-serif;
+  --font-fam-5: "Hepta Slab", serif;
+
+  --primary-color: #1e212b;
+  --secondary-color: #da2c38;
+  --third-color: #4d8b31;
+  --fourth-color: #ff8427;
+  --fifth-color: #ffc800;
+}
+button, a {
+  cursor: pointer;
+}
+#root {
+  width: 100%;
+  min-height: 100%;
+  /* border: 2px solid red; */
+}

@@ -1,0 +1,65 @@
+.all-ingredients-section {
+    margin-top:  min(80px, 7.5vh);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url("/images/cartoon-cooking-background.jpg");
+}
+.all-ingredients-main-cntr {
+    width: min(100%, 1200px);
+    background: rgb(255, 255, 255, 0.93);
+}
+.ingredients-title {
+    text-align: center;
+    font-size: clamp(1.8rem, 3vw, 5rem);
+    font-family: var(--font-fam-2);
+    font-weight: 550;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.ingredients-header-text {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    background-color: rgb(196, 196, 196);
+    gap: 5px;
+    padding: 3px 20px;
+    border-radius: 5px;
+}
+.ingredients-header-text span {
+    font-size: clamp(0.9rem, 1.3vw, 1rem);
+    font-family: var(--font-fam-3);
+    font-weight: 600;
+}
+.ingredients-body-cntr {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+.ingredient-cntr {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    gap: 5px;
+    padding: 3px 20px;
+    border-bottom: 2px solid rgb(0, 0, 0, 0.1);
+}
+.ingredient-cntr span {
+    font-size: clamp(0.9rem, 1.3vw, 1rem);
+    font-family: var(--font-fam-3);
+}
+.ingredients-name-body {
+    font-weight: 700;
+}
+/*========================= MEDIA QUERY ========================*/
+@media only screen and (max-width: 600px) {
+    .ingredient-cntr {
+        grid-template-columns: 0.9fr 0.9fr 1.2fr;
+    }
+    .ingredients-header-text {
+        grid-template-columns: 0.9fr 0.9fr 1.2fr;
+    }
+  }

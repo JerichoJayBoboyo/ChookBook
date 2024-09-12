@@ -1,0 +1,131 @@
+footer {
+    padding: 50px 20px;
+    width: 100%;
+    background: var(--primary-color);
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    border-top: 5px solid var(--third-color);
+}
+.colored-text {
+    color: var(--fifth-color);
+}
+.footer-first-column {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+    padding: 5px;
+}
+.follow-us, .our-sites {
+    font-size: clamp(2rem, 3vw, 2.7rem);
+    font-family: var(--font-fam-3);
+}
+.contact-icon-cntr {
+    display: flex;
+    gap: 20px;
+}
+.socmed-icons {
+    font-size: 1.8rem;
+    color: white;
+    transition: 0.2s all linear;
+}
+.socmed-icons:hover {
+    color: var(--secondary-color);
+}
+.footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding: 5px;
+}
+.email-input {
+    padding: 15px 15px 15px 25px;
+    background: none;
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    color: white;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.email-input:focus {
+    outline: none;
+}
+.submit-btn {
+    padding: 10px 20px;
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    letter-spacing: 2px;
+    font-family: var(--font-fam-3);
+    font-weight: 600;
+    border: none;
+    transition: 0.2s all linear;
+}
+.submit-btn:hover {
+    background: var(--secondary-color);
+    color: white;
+    padding: 10px 25px;
+}
+.footer-subscribe span {
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    font-family: var(--font-fam-3);
+}
+.footer-other-sites {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+    padding: 5px;
+}
+.footer-other-sites ul li {
+    list-style: none;
+    padding: 5px 0px;
+}
+.footer-other-sites ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-fam-5);
+    transition: 0.2s all linear;
+}
+.footer-other-sites ul li a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+.footer-second-column {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+.copyright {
+    font-size: 1.1rem;
+    font-family: var(--font-fam-3);
+}
+.copyright a {
+    color: white;
+    transition: 0.2s all linear;
+}
+.copyright a:hover {
+    color: var(--secondary-color);
+}
+/*==================== MEDIA QUERIES ====================*/
+@media only screen and (max-width: 800px) {
+    .footer-first-column {
+        flex-direction: column;
+        align-items: start;
+    }
+}

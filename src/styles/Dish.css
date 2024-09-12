@@ -1,0 +1,295 @@
+.recipe-section {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin-top: min(80px, 7.5vh);;
+}
+.recipe-main-cntr {
+    width: min(1400px, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+}
+.recipe-section-title {
+    text-align: center;
+    font-size: clamp(1.8rem, 3vw, 5rem);
+    font-family: var(--font-fam-2);
+    font-weight: 550;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.sort-and-search-cntr {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 3px 20px;
+    border-radius: 5px;
+    background-color: rgb(196, 196, 196);
+}
+.sort-time-cntr,  .sort-main-ingredient-cntr {
+    font-size: clamp(0.9rem, 1.3vw, 1rem);
+    font-family: var(--font-fam-3);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.options-main-ingredients, .options-time{
+    font-size: clamp(0.9rem, 1.3vw, 0.9rem);
+    padding: 3px;
+    border-radius: 5px;
+    font-family: var(--font-fam-3);
+    font-weight: 400;
+}
+.all-dishes-cntr {
+    column-gap: 10px;
+    row-gap: 20px;
+    padding: 30px 10px;
+    display: flex;
+    min-height: 600px;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    background: rgb(230, 230, 230);
+    border-radius: 5px;
+}
+.no-dish-txt {
+    font-size: clamp(2rem, 3vw, 5rem);
+    font-family: var(--font-fam-3);
+    color: rgb(155, 155, 155);
+}
+.dish-cntr {
+    width: 230px;
+    height: 230px;
+    position: relative;
+    transition: 0.2s all linear;        
+    box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.25);
+    background: white;
+}
+.dish-cntr:hover .dish-button-cntr {
+    display: flex;
+    transition: 0.2s all linear;
+}
+.dish-img-cntr {
+    width: 100%;
+    height: 85%;
+    position: relative;
+}
+.dish-img-cntr img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dish-name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: absolute;
+    font-family: var(--font-fam-5);
+    font-weight: 500;
+    height: 15%;
+}
+.dish-button-cntr {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.4);
+    display: none;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dish-button-cntr button {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: var(--font-fam-3);
+    font-weight: 500;
+    background: white;
+    transition: 0.4s all ease-in-out;
+}
+.dish-button-cntr button:hover {
+    background: var(--fifth-color);
+    color: white;
+    border: 1px solid var(--fifth-color);
+}
+.dish-recipe-cntr {
+    width: min(1200px, 90vw);
+    position: absolute;
+    height: min(600px, 80vh);
+    background-color: rgb(245, 245, 245);
+    top: 150px;
+    display: flex;
+    z-index: 10;
+}
+#shadow-cntr {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    height: 100%;
+    border: none;
+    background: rgb(0, 0, 0, 0.5);
+    z-index: 1;
+}
+#close-btn {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    transition: 0.2s all linear;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#close-btn:hover {
+    color: var(--fifth-color);
+}
+.recipe-image-cntr {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.recipe-image-cntr::after {
+    content: "";
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to right,rgba(245,245,245,0), rgba(245,245,245,1));
+    z-index: 11;
+}
+.recipe-image-cntr img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.recipe-list-cntr {
+    width: 50%;
+    padding: 20px 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    font-family: var(--font-fam-3);
+}
+.recipe-dish-name {
+    font-size: clamp(1.3rem, 3vw, 2.2rem);
+    font-family: var(--font-fam-2);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+.cooking-time-txt {
+    background: var(--third-color);
+    padding: 3px;
+    font-size: clamp(0.8rem, 1.3vw, 1rem);
+    font-family: var(--font-fam-3);
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    color: white;
+}
+.recipe-txt, .ingredients-txt {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-family: var(--font-fam-3);
+    font-weight: 500;
+    border-bottom: 2px solid rgb(0, 0, 0, 0.1);
+    padding: 5px 5px 5px 25px;
+}
+.recipe-ingredients, .recipe-steps {
+    list-style-type: none;
+}
+.recipe-steps, .recipe-ingredients {
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+
+}
+/*==================== MEDIA QUERY ====================*/
+@media only screen and (max-width: 750px) {
+    .recipe-section {
+        padding: 5px 0px;
+    }
+    .recipe-main-cntr {
+        padding: 5px 0px;
+    }
+    .dish-cntr {
+        width: 200px;
+        height: 200px;
+    }
+    .dish-img-cntr {
+        height: 100%;
+    }
+    .dish-name {
+        position: absolute;
+        bottom: 0;
+        height: 25%;
+        color: white;
+        text-align: center;
+        background: linear-gradient(to top, rgb(0, 0, 0, 1), rgb(0, 0, 0, 0.0));
+    }
+}
+@media only screen and (max-width: 660px) {
+    .dish-cntr {
+        width: 150px;
+        height: 150px;
+    }
+    .sort-and-search-cntr {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .dish-recipe-cntr {
+        height: min(650px, 80vh);
+    }
+    .recipe-image-cntr::after {
+        width: 0%;
+    }
+    .recipe-image-cntr {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+    }
+    .recipe-list-cntr {
+        color: white;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .recipe-dish-name {
+        background: rgba(0,0,0,0.4);
+        border-radius: 5px;
+        font-weight: 900;
+    }
+    .recipe-txt, .ingredients-txt {
+        font-weight: 700;
+        background: rgba(0,0,0,0.4);
+        border-radius: 5px;
+    }
+    .recipe-steps, .recipe-ingredients {
+        background: rgba(0,0,0,0.4);
+        border-radius: 5px;
+        padding: 5px 5px 5px 20px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .dish-cntr {
+        width: 120px;
+        height: 120px;
+    }
+    .dish-name {
+        font-size: 10px;
+    }
+}

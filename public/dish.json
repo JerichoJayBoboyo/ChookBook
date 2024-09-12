@@ -1,0 +1,528 @@
+[
+    {
+        "id": 1,
+        "name": "Chicken Adobo",
+        "mainIngredients": "Chicken",
+        "cooking-time": 45,
+        "ingredients": {
+            "vegetable-oil": "2 tablespoons",
+            "chicken": "1 Kilo",
+            "onion": "1 Large (sliced)",
+            "garlic": "5 cloves (minced)",
+            "soy-sauce": "2/3 cup",
+            "vinegar": "1/3 cup",
+            "black-pepper": "2 teaspoon (cracked)",
+            "bay-leaf": "3 leaves"
+        },
+        "popularity": 100,
+        "cooking-steps": {
+            "1": "Heat vegetable oil in a large skillet over medium-high heat. Cook chicken pieces until golden brown, 2 to 3 minutes per side. Transfer chicken to a plate and set aside.",
+            "2": "In the same skillet, add onions and cook until translucent, about 2 minutes. Add garlic and cook for an additional minute until fragrant.",
+            "3": "Return the chicken to the skillet. Add soy sauce, vinegar, black pepper, and bay leaves. Stir to combine and bring to a boil.",
+            "4": "Reduce heat to low, cover, and simmer for 30 to 40 minutes, or until chicken is tender and the sauce has thickened.",
+            "5": "Adjust seasoning with additional soy sauce or vinegar if needed. Serve hot with rice."
+        },
+        "image": "./images/adobo.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Arroz Caldo",
+        "mainIngredients": "Chicken",
+        "cooking-time": 80,
+        "ingredients": {
+            "vegetable-oil": "2 tablespoons",
+            "chicken": "500 grams",
+            "rice": "1 cup",
+            "onion": "1 Large (chopped)",
+            "garlic": "4 cloves (minced)",
+            "ginger": "2-inch piece (sliced)",
+            "chicken-broth": "4 cups",
+            "fish-sauce": "2 tablespoons",
+            "salt": "to taste",
+            "pepper": "to taste",
+            "green-onions": "for garnish",
+            "crispy-fried-garlic": "for garnish"
+        },
+        "popularity": 85,
+        "cooking-steps": {
+            "1": "In a pot, heat vegetable oil over medium heat. Add garlic, onions, and ginger, cooking until fragrant.",
+            "2": "Add chicken pieces and cook until lightly browned.",
+            "3": "Add rice and stir for a couple of minutes. Pour in chicken broth and fish sauce. Bring to a boil, then reduce heat and simmer for 30 minutes, or until rice is cooked and the mixture is thickened.",
+            "4": "Season with salt and pepper to taste. Serve hot, garnished with green onions and crispy fried garlic."
+        },
+        "image": "./images/aroz-caldo.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Bagnet",
+        "mainIngredients": "Pork",
+        "cooking-time": 195,
+        "ingredients": {
+            "pork-belly": "1 kilo",
+            "salt": "to taste",
+            "pepper": "to taste",
+            "bay-leaf": "2 leaves",
+            "garlic": "6 cloves (crushed)",
+            "vinegar": "1/2 cup",
+            "water": "enough to cover the pork",
+            "oil": "for deep-frying"
+        },
+        "popularity": 90,
+        "cooking-steps": {
+            "1": "In a pot, combine pork belly, salt, pepper, bay leaves, garlic, and vinegar. Add enough water to cover the pork and bring to a boil.",
+            "2": "Reduce heat and simmer for 1 hour, or until pork is tender. Remove pork and let it cool.",
+            "3": "Once cooled, pat pork dry and deep-fry in hot oil until crispy and golden brown.",
+            "4": "Drain on paper towels and serve hot."
+        },
+        "image": "./images/bagnet.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Bicol Express",
+        "mainIngredients": "Pork",
+        "cooking-time": 50,
+        "ingredients": {
+            "pork-belly": "500 grams (diced)",
+            "coconut-milk": "2 cups",
+            "chili-peppers": "10 pieces (sliced)",
+            "onion": "1 Large (chopped)",
+            "garlic": "5 cloves (minced)",
+            "shrimp-paste": "2 tablespoons",
+            "salt": "to taste",
+            "pepper": "to taste",
+            "vegetable-oil": "2 tablespoons"
+        },
+        "popularity": 80,
+        "cooking-steps": {
+            "1": "Heat vegetable oil in a pan over medium heat. Add garlic and onions, and cook until softened.",
+            "2": "Add diced pork and cook until browned.",
+            "3": "Stir in shrimp paste and cook for another minute. Add coconut milk and bring to a simmer.",
+            "4": "Add chili peppers and cook for 10 minutes, or until the sauce has thickened and pork is tender. Season with salt and pepper to taste."
+        },
+        "image": "./images/bicol-express.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Bistek Tagalog",
+        "mainIngredients": "Beef",
+        "cooking-time": 60,
+        "ingredients": {
+            "beef-top-round": "500 grams (sliced thinly)",
+            "soy-sauce": "1/4 cup",
+            "lemon-juice": "1/4 cup",
+            "onion": "2 Large (sliced)",
+            "garlic": "4 cloves (minced)",
+            "salt": "to taste",
+            "pepper": "to taste",
+            "vegetable-oil": "2 tablespoons",
+            "water": "1 cup"
+        },
+        "popularity": 75,
+        "cooking-steps": {
+            "1": "Marinate beef in soy sauce and lemon juice for at least 30 minutes.",
+            "2": "Heat oil in a pan over medium-high heat. Sauté garlic and onions until softened.",
+            "3": "Add marinated beef and cook until browned. Pour in water and bring to a boil.",
+            "4": "Reduce heat and simmer until beef is tender and sauce has thickened. Season with salt and pepper to taste."
+        },
+        "image": "./images/bistek-tagalog.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Chopsuey",
+        "mainIngredients": "Vegetables",
+        "cooking-time": 25,
+        "ingredients": {
+            "vegetable-oil": "2 tablespoons",
+            "chicken-breast": "200 grams (sliced)",
+            "pork": "200 grams (sliced)",
+            "carrots": "2 (sliced)",
+            "bell-peppers": "2 (sliced)",
+            "cabbage": "1/2 head (chopped)",
+            "onion": "1 Large (chopped)",
+            "garlic": "4 cloves (minced)",
+            "soy-sauce": "2 tablespoons",
+            "cornstarch": "1 tablespoon (dissolved in 1/4 cup water)",
+            "salt": "to taste",
+            "pepper": "to taste",
+            "water": "1 cup"
+        },
+        "popularity": 70,
+        "cooking-steps": {
+            "1": "Heat oil in a large pan over medium heat. Sauté garlic and onions until fragrant.",
+            "2": "Add chicken and pork, and cook until browned.",
+            "3": "Add carrots, bell peppers, and cabbage. Stir-fry for a few minutes.",
+            "4": "Add soy sauce and water, and bring to a simmer. Stir in cornstarch mixture to thicken. Season with salt and pepper to taste."
+        },
+        "image": "./images/chopsuey.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Inihaw na Baboy",
+        "mainIngredients": "Pork",
+        "cooking-time": 30,
+        "ingredients": {
+            "pork-belly": "1 kilo",
+            "soy-sauce": "1/4 cup",
+            "calamansi-juice": "1/4 cup",
+            "garlic": "5 cloves (minced)",
+            "brown-sugar": "2 tablespoons",
+            "salt": "to taste",
+            "pepper": "to taste",
+            "vegetable-oil": "for grilling"
+        },
+        "popularity": 85,
+        "cooking-steps": {
+            "1": "Marinate pork belly in soy sauce, calamansi juice, garlic, brown sugar, salt, and pepper for at least 2 hours.",
+            "2": "Preheat grill to medium-high heat and lightly oil the grates.",
+            "3": "Grill pork belly for 5-7 minutes per side, or until cooked through and slightly charred.",
+            "4": "Serve hot with steamed rice and your favorite dipping sauce."
+        },
+        "image": "./images/inihaw-na-baboy.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Kangkong with Bagoong",
+        "mainIngredients": "Vegetables",
+        "cooking-time": 15,
+        "ingredients": {
+            "kangkong": "1 bunch",
+            "bagoong": "2 tablespoons",
+            "garlic": "4 cloves (minced)",
+            "onion": "1 Large (chopped)",
+            "vegetable-oil": "2 tablespoons",
+            "salt": "to taste",
+            "pepper": "to taste"
+        },
+        "popularity": 70,
+        "cooking-steps": {
+            "1": "Heat oil in a pan over medium heat. Sauté garlic and onions until fragrant.",
+            "2": "Add bagoong and cook for another minute.",
+            "3": "Add kangkong and stir-fry for 3-5 minutes, or until wilted.",
+            "4": "Season with salt and pepper to taste. Serve hot."
+        },
+        "image": "./images/kangkong-with-bagoong.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Kare-Kare",
+        "mainIngredients": "Oxtail",
+        "cooking-time": 120,
+        "ingredients": {
+            "oxtail": "1 kilo",
+            "peanut-butter": "1 cup",
+            "coconut-milk": "1 cup",
+            "bok-choy": "1 bunch",
+            "eggplant": "2 (sliced)",
+            "string-beans": "1 cup",
+            "onion": "1 Large (chopped)",
+            "garlic": "5 cloves (minced)",
+            "salt": "to taste",
+            "pepper": "to taste",
+            "vegetable-oil": "2 tablespoons",
+            "water": "enough to cover the oxtail"
+        },
+        "popularity": 90,
+        "cooking-steps": {
+            "1": "In a pot, boil oxtail in water until tender. Remove and set aside.",
+            "2": "In a separate pan, heat oil and sauté garlic and onions until fragrant.",
+            "3": "Add peanut butter and coconut milk, stirring to combine. Return oxtail to the pan and simmer until well-coated with the sauce.",
+            "4": "Add vegetables and cook until tender. Season with salt and pepper to taste. Serve with bagoong on the side."
+        },
+        "image": "./images/kare-kare.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Laing",
+        "mainIngredients": "Vegetables",
+        "cooking-time": 60,
+        "ingredients": {
+            "dried-taro-leaves": "200 grams",
+            "coconut-milk": "2 cups",
+            "pork-belly": "200 grams (diced)",
+            "chili-peppers": "5 pieces (sliced)",
+            "onion": "1 Large (chopped)",
+            "garlic": "4 cloves (minced)",
+            "shrimp-paste": "2 tablespoons",
+            "salt": "to taste",
+            "pepper": "to taste",
+            "vegetable-oil": "2 tablespoons"
+        },
+        "popularity": 80,
+        "cooking-steps": {
+            "1": "Heat oil in a pan over medium heat. Sauté garlic, onions, and pork until the pork is cooked through.",
+            "2": "Add shrimp paste and cook for another minute.",
+            "3": "Pour in coconut milk and bring to a simmer.",
+            "4": "Add dried taro leaves and chili peppers. Simmer until the leaves are tender and the sauce has thickened. Season with salt and pepper to taste."
+        },
+        "image": "./images/laing.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Lechon Paksiw",
+        "mainIngredients": "Pork",
+        "cooking-time": 60,
+        "ingredients": {
+            "lechon": "500 grams (diced)",
+            "vinegar": "1/2 cup",
+            "soy-sauce": "1/4 cup",
+            "brown-sugar": "2 tablespoons",
+            "bay-leaf": "2 leaves",
+            "garlic": "4 cloves (minced)",
+            "onion": "1 Large (chopped)",
+            "salt": "to taste",
+            "pepper": "to taste",
+            "water": "1 cup",
+            "vegetable-oil": "2 tablespoons"
+        },
+        "popularity": 85,
+        "cooking-steps": {
+            "1": "Heat oil in a pan over medium heat. Sauté garlic and onions until fragrant.",
+            "2": "Add diced lechon and cook until slightly browned.",
+            "3": "Stir in vinegar, soy sauce, brown sugar, and bay leaves. Add water and bring to a boil.",
+            "4": "Reduce heat and simmer for 20 minutes, or until the sauce has thickened and the flavors are well combined. Season with salt and pepper to taste."
+        },
+        "image": "./images/lechon-paksiw.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Menudo",
+        "mainIngredients": "Pork",
+        "cooking-time": 120,
+        "ingredients": {
+            "pork": "500 grams (diced)",
+            "potatoes": "2 (diced)",
+            "carrots": "2 (diced)",
+            "green-peas": "1 cup",
+            "tomato-sauce": "1 cup",
+            "onion": "1 Large (chopped)",
+            "garlic": "4 cloves (minced)",
+            "soy-sauce": "2 tablespoons",
+            "salt": "to taste",
+            "pepper": "to taste",
+            "vegetable-oil": "2 tablespoons",
+            "water": "1 cup"
+        },
+        "popularity": 80,
+        "cooking-steps": {
+            "1": "Heat oil in a pan over medium heat. Sauté garlic and onions until fragrant.",
+            "2": "Add pork and cook until browned.",
+            "3": "Stir in tomato sauce and soy sauce, and add water. Bring to a boil.",
+            "4": "Add potatoes, carrots, and green peas. Simmer until vegetables are tender and sauce has thickened. Season with salt and pepper to taste."
+        },
+        "image": "./images/menudo.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Pancit Malabon",
+        "mainIngredients": "Noodles",
+        "cooking-time": 60,
+        "ingredients": {
+            "pancit-malabon-noodles": "500 grams",
+            "shrimp": "200 grams (peeled and deveined)",
+            "squid": "200 grams (sliced)",
+            "pork": "200 grams (sliced)",
+            "garlic": "5 cloves (minced)",
+            "onion": "1 Large (chopped)",
+            "pancit-malabon-sauce": "1 cup",
+            "chili-peppers": "2 (chopped)",
+            "salt": "to taste",
+            "pepper": "to taste",
+            "vegetable-oil": "2 tablespoons"
+        },
+        "popularity": 75,
+        "cooking-steps": {
+            "1": "Cook pancit malabon noodles according to package instructions. Set aside.",
+            "2": "Heat oil in a pan over medium heat. Sauté garlic and onions until fragrant.",
+            "3": "Add pork, shrimp, and squid. Cook until seafood is done.",
+            "4": "Add pancit malabon sauce and stir to combine. Add cooked noodles and toss to coat evenly. Season with salt and pepper to taste."
+        },
+        "image": "./images/pancit-malabon.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Pancit Canton",
+        "mainIngredients": "Noodles",
+        "cooking-time": 30,
+        "ingredients": {
+            "pancit-canton-noodles": "500 grams",
+            "pork": "200 grams (sliced)",
+            "chicken": "200 grams (sliced)",
+            "carrots": "2 (sliced)",
+            "cabbage": "1/2 head (chopped)",
+            "green-beans": "1 cup",
+            "soy-sauce": "2 tablespoons",
+            "oyster-sauce": "2 tablespoons",
+            "onion": "1 Large (chopped)",
+            "garlic": "4 cloves (minced)",
+            "salt": "to taste",
+            "pepper": "to taste",
+            "vegetable-oil": "2 tablespoons",
+            "water": "1 cup"
+        },
+        "popularity": 80,
+        "cooking-steps": {
+            "1": "Heat oil in a large pan over medium heat. Sauté garlic and onions until fragrant.",
+            "2": "Add pork and chicken, and cook until browned.",
+            "3": "Add carrots, green beans, and cabbage. Stir-fry for a few minutes.",
+            "4": "Add soy sauce, oyster sauce, and water. Bring to a simmer. Add pancit canton noodles and cook until noodles are tender and the sauce is absorbed. Season with salt and pepper to taste."
+        },
+        "image": "./images/pancit-canton.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Pinakbet",
+        "mainIngredients": "Vegetables",
+        "cooking-time": 35,
+        "ingredients": {
+            "bitter-melon": "1 (sliced)",
+            "eggplant": "2 (sliced)",
+            "string-beans": "1 cup",
+            "tomatoes": "2 (chopped)",
+            "pork-belly": "200 grams (diced)",
+            "shrimp-paste": "2 tablespoons",
+            "onion": "1 Large (chopped)",
+            "garlic": "4 cloves (minced)",
+            "salt": "to taste",
+            "pepper": "to taste",
+            "vegetable-oil": "2 tablespoons"
+        },
+        "popularity": 75,
+        "cooking-steps": {
+            "1": "Heat oil in a pan over medium heat. Sauté garlic, onions, and pork until the pork is browned.",
+            "2": "Add tomatoes and cook until softened.",
+            "3": "Add shrimp paste, bitter melon, eggplant, and string beans. Stir-fry for a few minutes.",
+            "4": "Add a little water if necessary. Simmer until vegetables are tender. Season with salt and pepper to taste."
+        },
+        "image": "./images/pinakbet.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Pork Ginataan",
+        "mainIngredients": "Pork",
+        "cooking-time": 90,
+        "ingredients": {
+            "pork-belly": "500 grams (diced)",
+            "coconut-milk": "2 cups",
+            "string-beans": "1 cup",
+            "eggplant": "2 (sliced)",
+            "onion": "1 Large (chopped)",
+            "garlic": "4 cloves (minced)",
+            "salt": "to taste",
+            "pepper": "to taste",
+            "vegetable-oil": "2 tablespoons"
+        },
+        "popularity": 80,
+        "cooking-steps": {
+            "1": "Heat oil in a pan over medium heat. Sauté garlic and onions until fragrant.",
+            "2": "Add pork and cook until browned.",
+            "3": "Pour in coconut milk and bring to a simmer.",
+            "4": "Add string beans and eggplant. Simmer until vegetables are tender and the sauce has thickened. Season with salt and pepper to taste."
+        },
+        "image": "./images/pork-ginataan.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Puchero",
+        "mainIngredients": "Pork",
+        "cooking-time": 150,
+        "ingredients": {
+            "pork-belly": "500 grams (diced)",
+            "chorizo": "200 grams (sliced)",
+            "potatoes": "2 (diced)",
+            "carrots": "2 (diced)",
+            "cabbage": "1/2 head (chopped)",
+            "tomato-sauce": "1 cup",
+            "onion": "1 Large (chopped)",
+            "garlic": "4 cloves (minced)",
+            "salt": "to taste",
+            "pepper": "to taste",
+            "vegetable-oil": "2 tablespoons",
+            "water": "4 cups"
+        },
+        "popularity": 70,
+        "cooking-steps": {
+            "1": "Heat oil in a pot over medium heat. Sauté garlic and onions until fragrant.",
+            "2": "Add pork and chorizo, and cook until browned.",
+            "3": "Stir in tomato sauce and water, and bring to a boil.",
+            "4": "Add potatoes, carrots, and cabbage. Simmer until vegetables are tender and the sauce is thickened. Season with salt and pepper to taste."
+        },
+        "image": "./images/puchero.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Sinigang na Baboy",
+        "mainIngredients": "Pork",
+        "cooking-time": 80,
+        "ingredients": {
+            "pork-ribs": "1 kilo",
+            "tamarind-paste": "2 tablespoons",
+            "water": "6 cups",
+            "radish": "2 (sliced)",
+            "string-beans": "1 cup",
+            "tomatoes": "2 (quartered)",
+            "onion": "1 Large (chopped)",
+            "salt": "to taste",
+            "pepper": "to taste",
+            "vegetable-oil": "2 tablespoons"
+        },
+        "popularity": 95,
+        "cooking-steps": {
+            "1": "In a pot, heat oil over medium heat. Sauté onions and tomatoes until softened.",
+            "2": "Add pork ribs and cook until browned.",
+            "3": "Pour in water and bring to a boil. Reduce heat and simmer until pork is tender.",
+            "4": "Add tamarind paste, radish, and string beans. Cook until vegetables are tender. Season with salt and pepper to taste."
+        },
+        "image": "./images/sinigang-na-baboy.jpg"
+    },
+    {
+        "id": 19,
+        "name": "Sinigang na Isda",
+        "mainIngredients": "Fish",
+        "cooking-time": 45,
+        "ingredients": {
+            "fish": "1 kilo (cut into pieces)",
+            "tamarind-paste": "2 tablespoons",
+            "water": "6 cups",
+            "radish": "2 (sliced)",
+            "string-beans": "1 cup",
+            "tomatoes": "2 (quartered)",
+            "onion": "1 Large (chopped)",
+            "salt": "to taste",
+            "pepper": "to taste",
+            "vegetable-oil": "2 tablespoons"
+        },
+        "popularity": 85,
+        "cooking-steps": {
+            "1": "In a pot, heat oil over medium heat. Sauté onions and tomatoes until softened.",
+            "2": "Add fish pieces and cook until lightly browned.",
+            "3": "Pour in water and bring to a boil. Reduce heat and simmer until fish is cooked through.",
+            "4": "Add tamarind paste, radish, and string beans. Cook until vegetables are tender. Season with salt and pepper to taste."
+        },
+        "image": "./images/sinigang-na-isda.jpg"
+    },
+    {
+        "id": 20,
+        "name": "Tapsilog",
+        "mainIngredients": "Beef",
+        "cooking-time": 40,
+        "ingredients": {
+            "beef-sirloin": "200 grams (sliced)",
+            "soy-sauce": "2 tablespoons",
+            "garlic": "4 cloves (minced)",
+            "brown-sugar": "2 tablespoons",
+            "egg": "1 per serving",
+            "cooked-rice": "2 cups",
+            "vegetable-oil": "2 tablespoons",
+            "salt": "to taste",
+            "pepper": "to taste"
+        },
+        "popularity": 90,
+        "cooking-steps": {
+            "1": "Marinate beef in soy sauce, brown sugar, and garlic for at least 1 hour.",
+            "2": "Heat oil in a pan over medium-high heat and cook beef until browned and cooked through.",
+            "3": "In the same pan, stir-fry cooked rice with a little oil and additional garlic.",
+            "4": "Fry an egg for each serving. Serve beef and garlic rice with a fried egg on top."
+        },
+        "image": "./images/tapsilog.jpg"
+    }
+]
