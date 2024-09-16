@@ -1,0 +1,391 @@
+.cookSection {
+    padding: 10px;
+    margin-top:  min(80px, 7.5vh);
+    display: flex;
+    justify-content: center;
+}
+.cookDishSelectionCntr { grid-area: name; }
+.cookDishIngredientsCntr { grid-area: ingredients; }
+.cookDishCookingCntr { grid-area: cook; }
+.cookMainCntr {
+    width: min(1400px, 100%);
+    padding: 10px;
+    min-height: 600px;
+    gap: 10px;
+    display: grid;
+    background: rgb(156, 156, 156);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    'name name name name'
+    'ingredients cook cook cook';
+    position: relative;
+}
+.cookMainCntrImgCntr {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.cookMainCntrImgCntr img{
+    position: absolute;
+    object-fit: cover;
+    filter: brightness(70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+/*========================== DISH SELECTION =============================*/
+.cookDishSelectionCntr {
+    background: none;
+    border-radius: 5px;
+    z-index: 15;
+}
+.dishName {
+    text-align: center;
+    font-size: clamp(1.8rem, 5vw, 3.5rem);
+    font-family: var(--font-fam-2);
+    font-weight: 550;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+}
+.selectionCntr {
+    display: flex;
+    gap: 20px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: rgb(196, 196, 196);
+    margin: 0px 3px 3px 3px;
+    z-index: 5;
+}
+.nameSearchCntr {
+    font-size: clamp(0.9rem, 1.3vw, 1rem);
+    font-family: var(--font-fam-3);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+.searchDishName {
+    font-size: clamp(0.9rem, 1.3vw, 0.9rem);
+    border-radius: 5px;
+    font-family: var(--font-fam-3);
+    font-weight: 400;
+    padding: 3px 5px;
+}
+.suggestionsList {
+    list-style-type: none;
+    padding: 3px;
+    position: absolute;
+    border: 2px solid rgb(73, 73, 73);
+    background: white;
+    z-index: 5;
+    top: 30px;
+    right: 0%;
+    max-height: 400px;
+    overflow-y: scroll;
+    width: 210px;
+    border-radius: 5px;
+  }
+  .suggestionItem {
+    padding: 8px;
+    cursor: pointer;
+    font-size: clamp(0.9rem, 1.3vw, 0.9rem);
+    font-family: var(--font-fam-3);
+    font-weight: 500;
+  }
+  .suggestionItem:hover {
+    background-color: #f0f0f0;
+  }
+  
+/*========================== INGREDIENTS DISPLAY =============================*/
+.cookDishIngredientsCntr {
+    background: rgb(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 2;
+}
+.ingredientsTitle {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    font-family: var(--font-fam-5);
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--fourth-color);
+}
+.ingredientsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    padding: 5px 0px;
+}
+.ingredientNameAndQuantity {
+    list-style-type: none;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-fam-3);
+    font-size: clamp(0.87rem, 2vw, 0.9rem);
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+.ingredientNameAndQuantity:nth-child(odd) {
+    background-color: rgb(230, 230, 230);
+  }
+.ingredientName {
+    text-transform: capitalize;
+    text-align: left;
+}
+.ingredientQuantity {
+    color: gray;
+    text-align: right;
+}
+.nothingTxt {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-family: var(--font-fam-3);
+    font-weight: 600;
+    color: rgb(168, 168, 168);
+}
+.servingCntr {
+    margin-top: 30px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.servingInfo {
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    font-family: var(--font-fam-5);
+    font-weight: 600;
+    text-align: center;
+}
+/*========================== COOKING PROCESS  =============================*/
+.stepsCntr { grid-area: steps; }
+.instructionCntr { grid-area: instruction; }
+.cookingProcessCntr { grid-area: process; }
+.cookDishCookingCntr {
+    background: rgb(255, 255, 255, 0.8);
+    border-radius: 5px;
+    display: grid;
+    grid-template-areas: 
+    'steps instruction'
+    'steps process';
+    grid-template-columns: max(15%, 55px) 1fr;
+    grid-template-rows: auto 1fr;
+    padding: 10px;
+    gap: 5px;
+    z-index: 2;
+}
+.stepsCntr { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.startTxt, .doneTxt {
+    font-family: var(--font-fam-3);
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 5px;
+    background: var(--primary-color);
+    color:  ghostwhite;
+    margin: 5px;
+    width: 100%;
+    text-align: center;
+}
+.stepsCircleCntr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.stepMeterCntr {
+    height: 98%;
+    background: rgb(167, 167, 167);
+    width: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.stepMeter {
+    background: #00d600;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+}
+.circleStepsContainer {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.stepCircle {
+    border: 3px solid rgb(167, 167, 167);
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: white;
+}
+.stepCircleActive {
+    border: 3px solid #00d600;
+  }
+.steps {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 0.8rem;
+}
+.stepTxt {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgb(102, 102, 102);
+    font-family: var(--font-fam-2);
+}
+.checkIcon {
+    font-size: 2rem;
+    color: #00d600;
+    animation: rotateIn 0.6s ease-in-out forwards; 
+}
+@keyframes rotateIn {
+    from {
+      transform: rotateY(-360deg); /* Start from a full rotation in the negative direction */
+      opacity: 0;
+    }
+    to {
+      transform: rotateY(0deg); /* End with no rotation */
+      opacity: 1;
+    }
+  }
+.stepNumber {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: var(--font-fam-3);
+}
+.instructionCntr {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.stepNumberInstruction {
+    font-family: var(--font-fam-3);
+    font-weight: 550;
+    font-size: clamp(1.8rem, 2vw, 2.5rem);
+}
+.stepInstruction {
+    font-family: var(--font-fam-3);
+    font-weight: 450;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+.cookingProcessCntr {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.2) inset;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+}
+.cookingCatImg {
+    height: 150px;
+}
+.timeBarCntr {
+    width: 80%;
+    height: 6px;
+    background: rgb(207, 207, 207);
+    position: relative;
+}
+.timeBar {
+    width: 60%;
+    height: 100%;
+    background: rgb(0, 214, 0);
+}
+.timerTxt {
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+    font-family: var(--font-fam-5);
+    font-weight: 600;
+}
+.timerBtnCntr {
+    display: flex;
+    gap: 5px;
+}
+.reset, .start, .pause {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: clamp(1rem, 1.8vw, 1.3rem);
+    font-family: var(--font-fam-3);
+    color: white;
+}
+.reset {
+    background: rgb(255, 65, 65);
+}
+.reset:hover {
+    background: rgb(180, 0, 0);
+}
+.start {
+    background: rgb(75, 255, 84);
+    padding: 10px 30px;
+}
+.start:hover {
+    background: rgb(0, 177, 9);
+    padding: 10px 30px;
+}
+.pause {
+    background: rgb(158, 158, 158);
+}
+.pause:hover {
+    background: rgb(109, 109, 109);
+}
+.stepBtnCntr {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.stepPrev, .stepNext {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+    font-family: var(--font-fam-3);
+    color: white;
+    background: var(--fifth-color);
+    transition: 0.2s all linear;
+}
+.stepPrev:hover, .stepNext:hover {
+    background: var(--primary-color);
+}
+/*------------------------ MEDIA QUERIES -------------------------*/
+@media only screen and (max-width: 800px) {
+    .cookSection {
+        padding: 0px;
+    }
+    .cookMainCntr {
+        gap: 5px;
+    }
+    .cookMainCntr {
+        grid-template-areas: 
+        'name name name name'
+        'ingredients ingredients ingredients ingredients'
+        'cook cook cook cook';
+    }
+    .servingCntr {
+        margin-top: 5px;
+    }
+}

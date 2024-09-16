@@ -1,13 +1,13 @@
-import "../styles/HistorySec.css";
+import HistorySecCSS from "../styles/HistorySec.module.css";
 import "../styles/index.css";
 
 function HistorySec() {
   return (
-    <section className="history-section">
-      <div className="history-sec-cntr">
-        <div className="purpose-cntr">
-          <h3 className="history-title">Our Purpose</h3>
-          <span className="history-desc-span">
+    <section className={HistorySecCSS.historySection}>
+      <div className={HistorySecCSS.historySecCntr}>
+        <div className={HistorySecCSS.purposeCntr}>
+          <h3 className={HistorySecCSS.historyTitle}>Our Purpose</h3>
+          <span className={HistorySecCSS.historyDescSpan}>
             We want to share with you the rich culture of Filipino cooking, a
             tapestry of flavors and traditions. This culinary heritage is deeply
             rooted in the diverse history of the Philippines. By exploring
@@ -16,9 +16,9 @@ function HistorySec() {
             and enjoy the richness of Filipino culinary culture.
           </span>
         </div>
-        <div className="culture-cntr">
-          <h3 className="history-title">Food Culture</h3>
-          <span className="history-desc-span">
+        <div className={HistorySecCSS.cultureCntr}>
+          <h3 className={HistorySecCSS.historyTitle}>Food Culture</h3>
+          <span className={HistorySecCSS.historyDescSpan}>
             Filipino cuisine reflects the Philippines diverse cultural heritage,
             blending indigenous ingredients with influences from Spanish,
             Chinese, and American culinary traditions. It features a unique
@@ -28,9 +28,9 @@ function HistorySec() {
             Filipino culture.
           </span>
         </div>
-        <div className="interesting-cntr">
-          <h3 className="history-title">What's Interesting?</h3>
-          <span className="history-desc-span">
+        <div className={HistorySecCSS.interestingCntr}>
+          <h3 className={HistorySecCSS.historyTitle}>What's Interesting?</h3>
+          <span className={HistorySecCSS.historyDescSpan}>
             Filipino cuisine is intriguing due to its diverse and distinctive
             flavors, influenced by a rich history of trade and colonization. One
             standout feature is its fusion of flavors, combining sweet, sour,
@@ -41,9 +41,9 @@ function HistorySec() {
             highlights the cultural importance of togetherness and hospitality.
           </span>
         </div>
-        <div className="did-you-know-cntr">
-          <h3 className="history-title">Did You know?</h3>
-          <span className="history-desc-span">
+        <div className={HistorySecCSS.didYouKnowCntr}>
+          <h3 className={HistorySecCSS.historyTitle}>Did You know?</h3>
+          <span className={HistorySecCSS.historyDescSpan}>
             Did you know that most Filipino dishes are prepared in large
             portions because meals are typically enjoyed with the entire family
             gathered together. This tradition emphasizes the importance of

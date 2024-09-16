@@ -1,5 +1,6 @@
-import "../styles/TopDishSec.css";
+import TopDishSecCSS from "../styles/TopDishSec.module.css";
 import "../styles/index.css";
+import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
 function TopDishSec() {
@@ -19,20 +20,24 @@ function TopDishSec() {
     .slice(0, 3);
 
   return (
-    <section className="top-dish-section">
-      <div className="top-dish-main-cntr">
-        <h2 className="top-favorite-title">Top Favorite Dishes</h2>
-        <div className="top-dish-cntr">
+    <section className={TopDishSecCSS.topDishSection}>
+      <div className={TopDishSecCSS.topDishMainCntr}>
+        <h2 className={TopDishSecCSS.topFavoriteTitle}>Top Favorite Dishes</h2>
+        <div className={TopDishSecCSS.topDishCntr}>
           {topDishes.map((dish) => (
-            <a href="recipes.html" key={dish.id} className="dish-cntr">
-              <h3 className="dish-name">{dish.name}</h3>
-              <div className="dish-img-cntr">
+            <Link
+              to={`/Recipe`}
+              key={dish.id}
+              className={TopDishSecCSS.dishCntr}
+            >
+              <h3 className={TopDishSecCSS.dishName}>{dish.name}</h3>
+              <div className={TopDishSecCSS.dishImgCntr}>
                 <img src={dish.image} alt={dish.name} />
               </div>
-              <span className="popularity">
+              <span className={TopDishSecCSS.popularity}>
                 {dish.popularity} people likes it <span>👍</span>
               </span>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

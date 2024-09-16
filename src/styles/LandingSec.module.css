@@ -1,11 +1,11 @@
-.landing-section {
+.landingSection {
     margin-top: min(80px, 7.5vh);
     width: 100%;
     display: flex;
     justify-content: center;
     background: #f6f6f6;
 }
-.landing-section-cntr {
+.landingSectionCntr {
     width: min(100%, 1200px);
     min-height: min(100vh, 600px);
     padding: 20px;
@@ -16,7 +16,7 @@
     gap: 10px;
     display: flex;
 }
-.landing-sec-img-cntr {
+.landingSecImgCntr {
     position: relative;
     width: 100%;
     height: 100%;
@@ -24,7 +24,7 @@
     border-radius: 20px;
     overflow: hidden;
 }
-.fillipino-food-img {
+.fillipinoFoodImg {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -32,7 +32,7 @@
     transition: 0.2s all linear;
     width: 100%;
 }
-.fillipino-food-img::before {
+.fillipinoFoodImg::before {
     content: "";
     width: 15%;
     position: absolute;
@@ -40,7 +40,7 @@
     left: 0%;
     background: green;
 }
-.landing-text-and-btn {
+.landingTextAndBtn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@
     gap: 20px;
     width: 100%;
 }
-.taste-of-philippines-txt {
+.tasteOfPhilippinesTxt {
     font-size: clamp(2.3rem, 3vw, 4rem);
     font-family: var(--font-fam-4);
 }
@@ -56,10 +56,7 @@
     font-size: clamp(1.1rem, 2vw, 1.3rem);
     font-family: var(--font-fam-3);
 }
-a {
-    text-decoration: none;
-}
-.cook-btn {
+.cookBtn {
     padding: 20px;
     text-transform: uppercase;
     border: none;
@@ -71,36 +68,37 @@ a {
     border-radius: 30px;
     margin-top: 20px;
     transition: 0.2s all linear;
+    text-decoration: none;
 }
-.cook-btn:hover {
+.cookBtn:hover {
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
     margin-top: 10px;
 }
 /*====================== MEDIA QUERIES ======================*/
 @media only screen and (max-width: 800px) {
-    .landing-text-and-btn {
+    .landingTextAndBtn {
         z-index: 1;
     }
-    .landing-sec-img-cntr {
+    .landingSecImgCntr {
         position: absolute;
         border-radius: 0px;
         background: white;
     }
-    .fillipino-food-img {
+    .fillipinoFoodImg {
         filter: brightness(65%);
         position: relative;
         object-fit: cover;
     }
-    .taste-of-philippines-txt {
+    .tasteOfPhilippinesTxt {
         line-height: 2.2rem;
     }
-    .qoute, .taste-of-philippines-txt {
+    .qoute, .tasteOfPhilippinesTxt {
         text-align: center;
     }
-    .landing-text-and-btn {
+    .landingTextAndBtn {
         color: white;
     }
-    .cook-btn {
+    .cookBtn {
         padding: 10px;
     }
 }

@@ -1,4 +1,4 @@
-import "../styles/AllIngredients.css";
+import AllIngredientsCSS from "../styles/AllIngredients.module.css";
 import "../styles/index.css";
 import React, { useState, useEffect } from "react";
 
@@ -13,22 +13,34 @@ function AllIngredients() {
   }, []); // Added dependency array to run the effect only once
 
   return (
-    <section className="all-ingredients-section">
-      <div className="all-ingredients-main-cntr">
-        <h2 className="ingredients-title">Ingredients list</h2>
-        <div className="ingredients-header-text">
-          <span className="ingredient-name-header">Ingredient</span>
-          <span className="ingredient-category-header">Category</span>
-          <span className="ingredient-description-header">Description</span>
+    <section className={AllIngredientsCSS.allIngredientsSection}>
+      <div className={AllIngredientsCSS.allIngredientsMainCntr}>
+        <h2 className={AllIngredientsCSS.ingredientsTitle}>Ingredients list</h2>
+        <div className={AllIngredientsCSS.ingredientsHeaderText}>
+          <span className={AllIngredientsCSS.ingredientNameHeader}>
+            Ingredient
+          </span>
+          <span className={AllIngredientsCSS.ingredientCategoryHeader}>
+            Category
+          </span>
+          <span className={AllIngredientsCSS.ingredientDescriptionHeader}>
+            Description
+          </span>
         </div>
-        <div className="ingredients-body-cntr">
+        <div className={AllIngredientsCSS.ingredientsBodyCntr}>
           {allIngredients.map((ingredient) => (
-            <div className="ingredient-cntr" key={ingredient.name}>
-              <span className="ingredients-name-body"> {ingredient.name}</span>
-              <span className="ingredients-category-body">
+            <div
+              className={AllIngredientsCSS.ingredientCntr}
+              key={ingredient.name}
+            >
+              <span className={AllIngredientsCSS.ingredientsNameBody}>
+                {" "}
+                {ingredient.name}
+              </span>
+              <span className={AllIngredientsCSS.ingredientsCategoryBody}>
                 {ingredient.ingredientsCategory}
               </span>
-              <span className="ingredients-description-body">
+              <span className={AllIngredientsCSS.ingredientsDescriptionBody}>
                 {ingredient.description}
               </span>
             </div>

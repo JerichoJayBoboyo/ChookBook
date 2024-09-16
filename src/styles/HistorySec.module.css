@@ -1,26 +1,26 @@
-.history-section {
+.historySection {
     display: flex;
     justify-content: center;
     padding: 40px 10px;
 }
-.history-sec-cntr {
+.historySecCntr {
     width: min(1200px, 100%);
     display: flex;
     gap: 20px;
 }
-.history-sec-cntr div {
+.historySecCntr div {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5);
 }
-.history-title {
+.historyTitle {
     font-size: clamp(1.3rem, 1.5vw, 2rem);
     font-family: var(--font-fam-1);
     font-weight: 400;
     margin-bottom: 10px;
     position: relative;
 }
-.history-title::before {
+.historyTitle::before {
     content: "";
     width: 40px;
     height: 40px;
@@ -31,7 +31,7 @@
     left: 5%;
     border-radius: 20px;
 }
-.history-title::after {
+.historyTitle::after {
     content: "";
     width: 60px;
     height: 60px;
@@ -43,17 +43,17 @@
     left: -20px;
     border-radius: 30px;
 }
-.history-desc-span {
+.historyDescSpan {
     font-size: clamp(0.9rem, 1.3vw, 1rem);
     font-family: var(--font-fam-3);
     font-weight: 320;
 }
 /*================  MEDIA QUERIES ================*/
 @media only screen and (max-width: 800px) {
-    .history-sec-cntr  {
+    .historySecCntr  {
         flex-direction: column;
     }
-    .history-section {
+    .historySection {
         padding: 40px 20px;
     }
 }

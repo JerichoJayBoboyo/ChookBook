@@ -11,10 +11,10 @@ footer {
     gap: 30px;
     border-top: 5px solid var(--third-color);
 }
-.colored-text {
+.coloredText {
     color: var(--fifth-color);
 }
-.footer-first-column {
+.footerFirstColumn {
     width: 100%;
     padding: 10px;
     display: flex;
@@ -22,37 +22,37 @@ footer {
     justify-content: space-around;
     gap: 30px;
 }
-.footer-contact {
+.footerContact {
     display: flex;
     flex-direction: column;
     height: 100%;
     gap: 10px;
     padding: 5px;
 }
-.follow-us, .our-sites {
+.followUs, .ourSites {
     font-size: clamp(2rem, 3vw, 2.7rem);
     font-family: var(--font-fam-3);
 }
-.contact-icon-cntr {
+.contactIconCntr {
     display: flex;
     gap: 20px;
 }
-.socmed-icons {
-    font-size: 1.8rem;
-    color: white;
-    transition: 0.2s all linear;
-}
-.socmed-icons:hover {
-    color: var(--secondary-color);
-}
-.footer-subscribe {
+.footerSubscribe {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 20px;
     padding: 5px;
 }
-.email-input {
+.icons {
+    font-size: 1.8rem;
+    color: white;
+    transition: 0.2s all linear;
+}
+.icons:hover {
+    color: var(--secondary-color);
+}
+.emailInput {
     padding: 15px 15px 15px 25px;
     background: none;
     font-size: clamp(0.9rem, 1.2vw, 1.1rem);
@@ -61,10 +61,10 @@ footer {
     border: none;
     border-bottom: 1px solid white;
 }
-.email-input:focus {
+.emailInput:focus {
     outline: none;
 }
-.submit-btn {
+.submitBtn {
     padding: 10px 20px;
     font-size: clamp(0.9rem, 1.2vw, 1.1rem);
     letter-spacing: 2px;
@@ -73,37 +73,37 @@ footer {
     border: none;
     transition: 0.2s all linear;
 }
-.submit-btn:hover {
+.submitBtn:hover {
     background: var(--secondary-color);
     color: white;
     padding: 10px 25px;
 }
-.footer-subscribe span {
+.footerSubscribe span {
     font-size: clamp(0.9rem, 1.2vw, 1.1rem);
     font-family: var(--font-fam-3);
 }
-.footer-other-sites {
+.footerOtherSites {
     display: flex;
     flex-direction: column;
     height: 100%;
     gap: 10px;
     padding: 5px;
 }
-.footer-other-sites ul li {
+.footerOtherSites ul li {
     list-style: none;
     padding: 5px 0px;
 }
-.footer-other-sites ul li a {
+.footerOtherSites ul li a {
     text-decoration: none;
     color: white;
     font-family: var(--font-fam-5);
     transition: 0.2s all linear;
 }
-.footer-other-sites ul li a:hover {
+.footerOtherSites ul li a:hover {
     color: var(--secondary-color);
     text-decoration: underline;
 }
-.footer-second-column {
+.footerSecondColumn {
     width: 100%;
     padding: 10px;
     display: flex;
@@ -124,7 +124,7 @@ footer {
 }
 /*==================== MEDIA QUERIES ====================*/
 @media only screen and (max-width: 800px) {
-    .footer-first-column {
+    .footerFirstColumn {
         flex-direction: column;
         align-items: start;
     }

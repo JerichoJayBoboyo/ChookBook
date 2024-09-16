@@ -6,7 +6,7 @@ import Footer from "./Footer.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Nav />
+    {/* <Nav /> */}
     <MainDiv />
     <Footer />
   </StrictMode>

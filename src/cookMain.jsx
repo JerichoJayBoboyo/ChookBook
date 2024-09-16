@@ -5,7 +5,7 @@ import Footer from "./Footer.jsx";
 
 createRoot(document.getElementById("root-cook")).render(
   <StrictMode>
-    <Nav />
+    {/* <Nav /> */}
     <Footer />
   </StrictMode>
 );

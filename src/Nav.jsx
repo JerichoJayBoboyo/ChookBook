@@ -1,10 +1,14 @@
 import { useEffect, useState, useRef } from "react";
+import { useLocation, NavLink } from "react-router-dom";
 import "./styles/index.css";
-import "./styles/Nav.css";
+import NavCSS from "./styles/Nav.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEllipsis, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
 function Nav() {
   const [navShowing, setNavShowing] = useState(false);
   const navContainerRef = useRef(null);
+  const location = useLocation();
 
   function handleNavButton() {
     setNavShowing((prevPosition) => !prevPosition);
@@ -17,75 +21,87 @@ function Nav() {
   }, [navShowing]);
 
   useEffect(() => {
-    function getCurrentHtmlFileName() {
-      const fullUrl = window.location.href;
-      const url = new URL(fullUrl);
-      const pathname = url.pathname;
-      const fileName = pathname.substring(pathname.lastIndexOf("/") + 1);
-      return fileName;
+    function getCurrentPageId() {
+      const path = location.pathname;
+      const pageId = path.substring(path.lastIndexOf("/") + 1);
+      return pageId;
     }
 
-    function changeStyle() {
-      // Remove any existing 'active' styles
-      const navLinks = document.querySelectorAll(".navlinks-cntr a");
-      navLinks.forEach((link) => {
+    function updateNavLinkStyles() {
+      // Remove existing 'active' styles
+      document.querySelectorAll(`.${NavCSS.navLinksA}`).forEach((link) => {
         link.style.background = "";
         link.style.color = "";
       });
 
-      // Get the current page file name
-      const fileName = getCurrentHtmlFileName();
+      // Get the current page id
+      const pageId = getCurrentPageId();
 
-      // Ensure fileName is valid before using it
-      const id = fileName.split(".")[0];
-      if (id) {
+      if (pageId) {
         // Apply 'active' style to the current page link
-        const currentLink = document.querySelector(`#${id}`);
+        const currentLink = document.querySelector(`a[href*="${pageId}"]`);
         if (currentLink) {
           currentLink.style.background = "#1e212b";
           currentLink.style.color = "ghostwhite";
         }
       } else {
-        console.warn("Invalid file name:", fileName);
+        console.warn("Invalid page ID:", pageId);
       }
     }
 
-    changeStyle();
-  }, []); // Empty dependency array means this effect runs once after the initial render
+    updateNavLinkStyles();
+  }, [location.pathname]);
 
   return (
     <nav>
-      <div className="nav-main-cntr">
-        <div className="logo-cntr">
+      <div className={NavCSS.navMainCntr}>
+        <div className={NavCSS.logoCntr}>
           <img src="/images/chookbook-logo.png" alt="Logo" />
         </div>
-        <div className="navlinks-cntr" ref={navContainerRef}>
-          <a className="nav-links-a" href="index.html" id="index">
+        <div className={NavCSS.navlinksCntr} ref={navContainerRef}>
+          <NavLink
+            to="/"
+            className={NavCSS.navLinksA}
+            onClick={handleNavButton}
+          >
             Home
-          </a>
-          <a className="nav-links-a" href="ingredients.html" id="ingredients">
+          </NavLink>
+          <NavLink
+            to="/Ingredients"
+            className={NavCSS.navLinksA}
+            onClick={handleNavButton}
+          >
             Ingredients
-          </a>
-          <a className="nav-links-a" href="recipes.html" id="recipes">
-            Recipes
-          </a>
-          <a className="nav-links-a" href="about.html" id="about">
-            About
-          </a>
-          <a className="nav-links-a" href="cook.html" id="cook">
+          </NavLink>
+          <NavLink
+            to="/Recipe"
+            className={NavCSS.navLinksA}
+            onClick={handleNavButton}
+          >
+            Recipe
+          </NavLink>
+          <NavLink
+            to="/Cook"
+            className={NavCSS.navLinksA}
+            onClick={handleNavButton}
+          >
             Cook
-          </a>
+          </NavLink>
         </div>
-        <div className="nav-buttons">
-          <button className="links-menu" onClick={handleNavButton}>
-            <i
-              className={`fa-solid fa-ellipsis ${navShowing ? "hidden" : ""}`}
-            ></i>
-            <i
-              className={`fa-regular fa-circle-xmark ${
-                navShowing ? "" : "hidden"
+        <div className={NavCSS.navButtons}>
+          <button className={NavCSS.linksMenu} onClick={handleNavButton}>
+            <FontAwesomeIcon
+              icon={faEllipsis}
+              className={`${NavCSS.navBtnSvgEllipsis} ${
+                navShowing ? NavCSS.hidden : ""
               }`}
-            ></i>
+            />
+            <FontAwesomeIcon
+              icon={faCircleXmark}
+              className={`${NavCSS.navBtnSvgX} ${
+                navShowing ? "" : NavCSS.hidden
+              }`}
+            />
           </button>
         </div>
       </div>

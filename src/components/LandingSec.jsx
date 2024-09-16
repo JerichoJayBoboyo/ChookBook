@@ -1,30 +1,32 @@
-import "../styles/LandingSec.css";
+import React from "react";
+import { Link } from "react-router-dom";
+import LandingSecCSS from "../styles/LandingSec.module.css";
 import "../styles/index.css";
 
 function LandingSec() {
   return (
-    <section className="landing-section">
-      <div className="landing-section-cntr">
-        <div className="landing-sec-img-cntr">
+    <section className={LandingSecCSS.landingSection}>
+      <div className={LandingSecCSS.landingSectionCntr}>
+        <div className={LandingSecCSS.landingSecImgCntr}>
           <img
             src="/images/filipinofood.png"
             alt="filipinofood"
-            className="fillipino-food-img"
+            className={LandingSecCSS.fillipinoFoodImg}
           />
         </div>
-        <div className="landing-text-and-btn">
-          <h2 className="taste-of-philippines-txt">
+        <div className={LandingSecCSS.landingTextAndBtn}>
+          <h2 className={LandingSecCSS.tasteOfPhilippinesTxt}>
             The taste of the Philippines
           </h2>
-          <p className="qoute">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Exercitationem dolore consectetur maiores debitis quasi obcaecati
-            velit sint itaque nulla unde, magni ad quae ex commodi numquam
-            magnam maxime delectus. In?
+          <p className={LandingSecCSS.qoute}>
+            Discover and savor the flavors of Philippine cuisine with our app.
+            Rest assured, we will provide comprehensive guidance throughout the
+            entire process, from preparation to tasting, so you need not worry
+            about cooking.
           </p>
-          <a href="#" className="cook-btn">
+          <Link to="/Cook" className={LandingSecCSS.cookBtn}>
             I want to Cook!
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,6 +1,9 @@
-import "../styles/Dish.css";
+import DishCSS from "../styles/Dish.module.css";
 import "../styles/index.css";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes, faClock } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 function Dish() {
   const [dishes, setDishes] = useState([]);
@@ -10,14 +13,17 @@ function Dish() {
   const [selectedIngredient, setSelectedIngredient] = useState("");
   const [selectedCookingTime, setSelectedCookingTime] = useState("");
   const [isVisible, setIsVisible] = useState(false);
+  const navigate = useNavigate();
+
+  const handleCookClick = (id) => {
+    navigate("/Cook", { state: { dishId: id } });
+  };
 
   useEffect(() => {
-    // Fetch JSON data from the public folder
     fetch("/dish.json")
       .then((response) => response.json())
       .then((data) => {
         setDishes(data);
-        console.log("Dishes loaded:", data); // Debugging
 
         // Extract unique main ingredients
         const ingredientsSet = new Set(
@@ -40,11 +46,9 @@ function Dish() {
   };
 
   function showRecipe(e) {
-    const dishId = Number(e.target.value); // Get the ID of the clicked button
-    console.log("Clicked button ID:", dishId); // Debugging
-    const dish = dishes.find((dish) => dish.id === dishId); // Find the corresponding dish
-    console.log("Found dish:", dish); // Debugging
-    setSelectedDish(dish); // Set the selected dish
+    const dishId = Number(e.target.value);
+    const dish = dishes.find((dish) => dish.id === dishId);
+    setSelectedDish(dish);
     setIsVisible(true);
   }
 
@@ -56,57 +60,55 @@ function Dish() {
     setSelectedCookingTime(e.target.value);
   }
 
-  // Filter dishes based on selected ingredient and cooking time
-  const filteredDishes = dishes.filter(
-    (dish) =>
-      (selectedIngredient === "" ||
-        dish.mainIngredients === selectedIngredient) &&
-      (selectedCookingTime === "" ||
-        dish["cooking-time"] === Number(selectedCookingTime))
-  );
+  const filteredDishes = dishes.filter((dish) => {
+    const matchesIngredient =
+      selectedIngredient === "" ||
+      dish.mainIngredients.includes(selectedIngredient);
+    const matchesCookingTime =
+      selectedCookingTime === "" ||
+      dish["cooking-time"] === Number(selectedCookingTime);
+    return matchesIngredient && matchesCookingTime;
+  });
 
-  function underDevelopmentAlert() {
-    alert("This part is still under development");
-  }
   return (
-    <section className="recipe-section">
+    <section className={DishCSS.recipeSection}>
       <button
-        id="shadow-cntr"
+        className={DishCSS.shadowCntr}
         onClick={toggleVisibility}
-        style={{
-          display: isVisible ? "flex" : "none",
-        }}
+        style={{ display: isVisible ? "flex" : "none" }}
       ></button>
       {selectedDish && (
-        <div className="dish-recipe-cntr">
+        <div className={DishCSS.dishRecipeCntr}>
           <button
-            id="close-btn"
+            className={DishCSS.closeBtn}
             onClick={() => {
               setSelectedDish(null);
               setIsVisible(false);
             }}
           >
-            <i className="fa-solid fa-square-xmark"></i>
+            <FontAwesomeIcon icon={faTimes} />
           </button>
-          <div className="recipe-image-cntr">
+          <div className={DishCSS.recipeImageCntr}>
             <img src={selectedDish.image} alt={selectedDish.name} />
           </div>
-          <div className="recipe-list-cntr">
-            <h2 className="recipe-dish-name">{`"${selectedDish.name}"`}</h2>
-            <span className="recipe-txt">Recipe</span>
-            <ol className="recipe-steps">
-              {selectedDish["cooking-steps"] ? (
-                Object.values(selectedDish["cooking-steps"]).map(
+          <div className={DishCSS.recipeListCntr}>
+            <h2
+              className={DishCSS.recipeDishName}
+            >{`"${selectedDish.name}"`}</h2>
+            <span className={DishCSS.recipeTxt}>Recipe</span>
+            <ol className={DishCSS.recipeSteps}>
+              {selectedDish["cookingSteps"] ? (
+                Object.values(selectedDish["cookingSteps"]).map(
                   (step, index) => (
-                    <li key={index}>{`${index + 1}. ${step}`}</li>
+                    <li key={index}>{`${index + 1}. ${step.instruction}`}</li>
                   )
                 )
               ) : (
                 <li>No recipe steps available</li>
               )}
             </ol>
-            <span className="ingredients-txt">Ingredients</span>
-            <ul className="recipe-ingredients">
+            <span className={DishCSS.ingredientsTxt}>Ingredients</span>
+            <ul className={DishCSS.recipeIngredients}>
               {selectedDish.ingredients ? (
                 Object.entries(selectedDish.ingredients).map(
                   ([ingredient, quantity], index) => (
@@ -121,35 +123,35 @@ function Dish() {
         </div>
       )}
 
-      <div className="recipe-main-cntr">
-        <h2 className="recipe-section-title">Dishes & Recipes</h2>
+      <div className={DishCSS.recipeMainCntr}>
+        <h2 className={DishCSS.recipeSectionTitle}>Dishes & Recipes</h2>
 
-        <div className="sort-and-search-cntr">
-          <div className="sort-time-cntr">
+        <div className={DishCSS.sortAndSearchCntr}>
+          <div className={DishCSS.sortTimeCntr}>
             <label htmlFor="options-time">Show dishes by cooking time: </label>
             <select
               id="options-time"
               name="options-time"
-              className="options-time"
+              className={DishCSS.optionsTime}
               value={selectedCookingTime}
               onChange={handleCookingTimeChange}
             >
               <option value="">Show All</option>
-              {cookingTimes.map((time) => (
-                <option key={time} value={time}>
+              {cookingTimes.map((time, index) => (
+                <option key={index} value={time}>
                   {time} minutes
                 </option>
               ))}
             </select>
           </div>
-          <div className="sort-main-ingredient-cntr">
+          <div className={DishCSS.sortMainIngredientCntr}>
             <label htmlFor="options-main-ingredients">
               Show dish with main ingredient:
             </label>
             <select
               id="options-main-ingredients"
               name="options-main-ingredients"
-              className="options-main-ingredients"
+              className={DishCSS.optionsMainIngredients}
               value={selectedIngredient}
               onChange={handleIngredientChange}
             >
@@ -163,31 +165,37 @@ function Dish() {
           </div>
         </div>
 
-        <div className="all-dishes-cntr">
+        <div className={DishCSS.allDishesCntr}>
           {filteredDishes.length === 0 ? (
-            <p className="no-dish-txt">{`"No Dishes Found"`}</p>
+            <p className={DishCSS.noDishTxt}>No Dishes Found</p>
           ) : (
             filteredDishes.map((dish) => (
-              <div className="dish-cntr" key={dish.id}>
-                <div className="dish-cooking-time">
-                  <span className="cooking-time-txt">
-                    {dish["cooking-time"]}mins
+              <div className={DishCSS.dishCntr} key={dish.id}>
+                <div className={DishCSS.dishCookingTime}>
+                  <span className={DishCSS.cookingTimeTxt}>
+                    <FontAwesomeIcon icon={faClock} />
+                    {dish["cooking-time"]} mins
                   </span>
                 </div>
-                <div className="dish-img-cntr">
+                <div className={DishCSS.dishImgCntrDish}>
                   <img src={dish.image} alt={dish.name} />
                 </div>
-                <span className="dish-name">{dish.name}</span>
-                <div className="dish-button-cntr">
+                <span className={DishCSS.dishName}>{dish.name}</span>
+                <div className={DishCSS.dishButtonCntr}>
                   <button
-                    className="recipe-btn"
+                    className={DishCSS.recipeBtn}
                     id={dish.id}
                     value={dish.id}
-                    onClick={showRecipe} // Ensure event object is passed
+                    onClick={showRecipe}
                   >
                     Recipe
                   </button>
-                  <button className="cook-btn" onClick={underDevelopmentAlert}>
+                  <button
+                    className={DishCSS.cookBtn}
+                    id={dish.id}
+                    value={dish.id}
+                    onClick={() => handleCookClick(dish.id)}
+                  >
                     Cook
                   </button>
                 </div>
