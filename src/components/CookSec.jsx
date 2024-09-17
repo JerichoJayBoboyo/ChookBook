@@ -23,7 +23,7 @@ function CookSec({ selectedDishId, setSelectedDishId }) {
   const alarm = new Audio(AlarmAudio);
 
   useEffect(() => {
-    fetch("/dish.json")
+    fetch("/ChookBook//dish.json")
       .then((response) => response.json())
       .then((data) => {
         setAllDish(data);
@@ -168,15 +168,16 @@ function CookSec({ selectedDishId, setSelectedDishId }) {
   const percentageCompleted = (completedSteps / stepCount) * 100;
 
   const imageMap = {
-    0: "/images/cooking-cat.gif",
-    1: "/images/cooking-dog.gif",
-    2: "/images/cooking-panda.gif",
-    3: "/images/cooking-racoon.gif",
-    4: "/images/animal-dog2.gif",
-    5: "/images/cooking-cat.gif",
+    0: "/ChookBook//images/cooking-cat.gif",
+    1: "/ChookBook//images/cooking-dog.gif",
+    2: "/ChookBook//images/cooking-panda.gif",
+    3: "/ChookBook//images/cooking-racoon.gif",
+    4: "/ChookBook//images/animal-dog2.gif",
+    5: "/ChookBook//images/cooking-cat.gif",
   };
 
-  const imageSrc = imageMap[stepCounter] || "/images/default-image.jpg";
+  const imageSrc =
+    imageMap[stepCounter] || "/ChookBook//images/default-image.jpg";
 
   useEffect(() => {
     if (confettiTriggered && stepCounter === dishSteps.length - 1) {

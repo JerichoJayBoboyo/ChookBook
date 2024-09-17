@@ -10,7 +10,7 @@ import TitleManager from "./components/TitleManager.jsx";
 
 function MainDiv() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ChookBook/">
       <header>
         <Nav />
       </header>

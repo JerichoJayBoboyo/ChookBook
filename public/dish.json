@@ -43,7 +43,7 @@
                 "time": 5
             }
         ],
-        "image": "./images/adobo.jpg"
+        "image": "/ChookBook//images/adobo.jpg"
     },    
     {
         "id": 2,
@@ -88,7 +88,7 @@
                 "time": 5
             }
         ],
-        "image": "./images/aroz-caldo.jpg"
+        "image": "/ChookBook//images/aroz-caldo.jpg"
     },    
     {
         "id": 3,
@@ -129,7 +129,7 @@
                 "time": 5
             }
         ],
-        "image": "./images/bagnet.jpg"
+        "image": "/ChookBook//images/bagnet.jpg"
     },
     {
         "id": 4,
@@ -171,7 +171,7 @@
                 "time": 10
             }
         ],
-        "image": "./images/bicol-express.jpg"
+        "image": "/ChookBook//images/bicol-express.jpg"
     },
     {
         "id": 5,
@@ -213,7 +213,7 @@
                 "time": 20
             }
         ],
-        "image": "./images/bistek-tagalog.jpg"
+        "image": "/ChookBook/images/bistek-tagalog.jpg"
     },
     {
         "id": 6,
@@ -259,7 +259,7 @@
                 "time": 10
             }
         ],
-        "image": "./images/chopsuey.jpg"
+        "image": "/ChookBook/images/chopsuey.jpg"
     },    
     {
         "id": 7,
@@ -300,7 +300,7 @@
                 "time": 5
             }
         ],
-        "image": "./images/inihaw-na-baboy.jpg"
+        "image": "/ChookBook/images/inihaw-na-baboy.jpg"
     },    
     {
         "id": 8,
@@ -340,7 +340,7 @@
                 "time": 2
             }
         ],
-        "image": "./images/kangkong-with-bagoong.jpg"
+        "image": "/ChookBook/images/kangkong-with-bagoong.jpg"
     },
     {
         "id": 9,
@@ -385,7 +385,7 @@
                 "time": 15
             }
         ],
-        "image": "./images/kare-kare.jpg"
+        "image": "/ChookBook/images/kare-kare.jpg"
     },    
     {
         "id": 10,
@@ -428,7 +428,7 @@
                 "time": 20
             }
         ],
-        "image": "./images/laing.jpg"
+        "image": "/ChookBook/images/laing.jpg"
     },
     {
         "id": 11,
@@ -472,7 +472,7 @@
                 "time": 20
             }
         ],
-        "image": "./images/lechon-paksiw.jpg"
+        "image": "/ChookBook/images/lechon-paksiw.jpg"
     },
     {
         "id": 12,
@@ -517,7 +517,7 @@
                 "time": 20
             }
         ],
-        "image": "./images/menudo.jpg"
+        "image": "/ChookBook/images/menudo.jpg"
     },
     {
         "id": 13,
@@ -561,7 +561,7 @@
                 "time": 5
             }
         ],
-        "image": "./images/pancit-malabon.jpg"
+        "image": "/ChookBook/images/pancit-malabon.jpg"
     },
     {
         "id": 14,
@@ -608,7 +608,7 @@
                 "time": 10
             }
         ],
-        "image": "./images/pancit-canton.jpg"
+        "image": "/ChookBook/images/pancit-canton.jpg"
     },
     {
         "id": 15,
@@ -652,7 +652,7 @@
                 "time": 10
             }
         ],
-        "image": "./images/pinakbet.jpg"
+        "image": "/ChookBook/images/pinakbet.jpg"
     },
     {
         "id": 16,
@@ -694,7 +694,7 @@
                 "time": 15
             }
         ],
-        "image": "./images/pork-ginataan.jpg"
+        "image": "/ChookBook/images/pork-ginataan.jpg"
     },
     {
         "id": 17,
@@ -739,7 +739,7 @@
                 "time": 20
             }
         ],
-        "image": "./images/puchero.jpg"
+        "image": "/ChookBook/images/puchero.jpg"
     },
     {
         "id": 18,
@@ -782,7 +782,7 @@
                 "time": 10
             }
         ],
-        "image": "./images/sinigang-na-baboy.jpg"
+        "image": "/ChookBook/images/sinigang-na-baboy.jpg"
     },
     {
         "id": 19,
@@ -825,7 +825,7 @@
                 "time": 10
             }
         ],
-        "image": "./images/sinigang-na-isda.jpg"
+        "image": "/ChookBook/images/sinigang-na-isda.jpg"
     },
     {
         "id": 20,
@@ -867,6 +867,6 @@
                 "time": 5
             }
         ],
-        "image": "./images/tapsilog.jpg"
+        "image": "/ChookBook/images/tapsilog.jpg"
     }    
 ]

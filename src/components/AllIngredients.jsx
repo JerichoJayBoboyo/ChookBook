@@ -6,7 +6,7 @@ function AllIngredients() {
   const [allIngredients, setAllIngredients] = useState([]);
 
   useEffect(() => {
-    fetch("/allIngredients.json")
+    fetch("/ChookBook//allIngredients.json")
       .then((response) => response.json())
       .then((data) => setAllIngredients(data))
       .catch((error) => console.error("Error fetching data:", error));

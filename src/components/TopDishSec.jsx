@@ -8,7 +8,7 @@ function TopDishSec() {
 
   useEffect(() => {
     // Fetch JSON data from the public folder
-    fetch("/dish.json")
+    fetch("/ChookBook//dish.json")
       .then((response) => response.json())
       .then((data) => setDishes(data))
       .catch((error) => console.error("Error fetching data:", error));

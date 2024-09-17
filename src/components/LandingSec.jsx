@@ -9,7 +9,7 @@ function LandingSec() {
       <div className={LandingSecCSS.landingSectionCntr}>
         <div className={LandingSecCSS.landingSecImgCntr}>
           <img
-            src="/images/filipinofood.png"
+            src="/ChookBook/images/filipinofood.png"
             alt="filipinofood"
             className={LandingSecCSS.fillipinoFoodImg}
           />

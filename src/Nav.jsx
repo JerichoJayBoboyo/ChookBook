@@ -56,7 +56,7 @@ function Nav() {
     <nav>
       <div className={NavCSS.navMainCntr}>
         <div className={NavCSS.logoCntr}>
-          <img src="/images/chookbook-logo.png" alt="Logo" />
+          <img src="/ChookBook/images/chookbook-logo.png" alt="Logo" />
         </div>
         <div className={NavCSS.navlinksCntr} ref={navContainerRef}>
           <NavLink

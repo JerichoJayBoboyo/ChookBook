@@ -15,11 +15,11 @@ function PromotionSec() {
           , highlighting the unique tastes of Filipino cuisine!
         </div>
         <div className={PromotionSecCSS.promotionImg}>
-          <img src="/images/buddle-fight.jpg" alt="" />
+          <img src="/ChookBook//images/buddle-fight.jpg" alt="" />
         </div>
 
         <div className={PromotionSecCSS.promotionImg}>
-          <img src="/images/karinderya.jpg" alt="" />
+          <img src="/ChookBook//images/karinderya.jpg" alt="" />
         </div>
         <div className={PromotionSecCSS.promotionTxt}>
           Embark on a culinary adventure with Filipino food, where{" "}
@@ -37,7 +37,7 @@ function PromotionSec() {
           .
         </div>
         <div className={PromotionSecCSS.promotionImg}>
-          <img src="/images/kids-while-eating.jpg" alt="" />
+          <img src="/ChookBook//images/kids-while-eating.jpg" alt="" />
         </div>
       </div>
     </section>

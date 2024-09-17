@@ -62,19 +62,39 @@ function Footer() {
             Follow <span className={FooterCSS.coloredText}>Us</span>
           </h2>
           <div className={FooterCSS.contactIconCntr}>
-            <a href="#" className={FooterCSS.socmedLinkIcon}>
+            <a
+              href="#"
+              className={FooterCSS.socmedLinkIcon}
+              onClick={handleAccountAddress}
+            >
               <FontAwesomeIcon icon={faFacebook} className={FooterCSS.icons} />
             </a>
-            <a href="#" className={FooterCSS.socmedLinkIcon}>
+            <a
+              href="#"
+              className={FooterCSS.socmedLinkIcon}
+              onClick={handleAccountAddress}
+            >
               <FontAwesomeIcon icon={faTelegram} className={FooterCSS.icons} />
             </a>
-            <a href="#" className={FooterCSS.socmedLinkIcon}>
+            <a
+              href="#"
+              className={FooterCSS.socmedLinkIcon}
+              onClick={handleAccountAddress}
+            >
               <FontAwesomeIcon icon={faInstagram} className={FooterCSS.icons} />
             </a>
-            <a href="#" className={FooterCSS.socmedLinkIcon}>
+            <a
+              href="#"
+              className={FooterCSS.socmedLinkIcon}
+              onClick={handleAccountAddress}
+            >
               <FontAwesomeIcon icon={faTiktok} className={FooterCSS.icons} />
             </a>
-            <a href="#" className={FooterCSS.socmedLinkIcon}>
+            <a
+              href="#"
+              className={FooterCSS.socmedLinkIcon}
+              onClick={handleAccountAddress}
+            >
               <FontAwesomeIcon icon={faXTwitter} className={FooterCSS.icons} />
             </a>
           </div>

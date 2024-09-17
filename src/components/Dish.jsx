@@ -20,7 +20,7 @@ function Dish() {
   };
 
   useEffect(() => {
-    fetch("/dish.json")
+    fetch("/ChookBook//dish.json")
       .then((response) => response.json())
       .then((data) => {
         setDishes(data);
