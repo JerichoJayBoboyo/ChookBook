@@ -1,0 +1,167 @@
+[
+  {
+    "name": "Vegetable Oil",
+    "description": "Neutral oil used for cooking and frying.",
+    "ingredientsCategory": "Oils and Fats"
+  },
+  {
+    "name": "Coconut Milk",
+    "description": "Creamy liquid from coconut flesh, adds a rich, tropical flavor.",
+    "ingredientsCategory": "Oils and Fats"
+  },
+  {
+    "name": "Pork Belly",
+    "description": "Rich cut from the underside of the pig, known for its tender texture.",
+    "ingredientsCategory": "Oils and Fats"
+  },
+  {
+    "name": "Chicken",
+    "description": "Versatile poultry meat with a mild flavor, popular worldwide.",
+    "ingredientsCategory": "Meats and Seafood"
+  },
+  {
+    "name": "Pork",
+    "description": "Meat from domesticated pigs, used in various global cuisines.",
+    "ingredientsCategory": "Meats and Seafood"
+  },
+  {
+    "name": "Beef Sirloin",
+    "description": "Tender beef cut from the rear end, often grilled or roasted.",
+    "ingredientsCategory": "Meats and Seafood"
+  },
+  {
+    "name": "Shrimp",
+    "description": "Small shellfish with sweet, tender meat, used in various seafood dishes.",
+    "ingredientsCategory": "Meats and Seafood"
+  },
+  {
+    "name": "Squid",
+    "description": "Cephalopod mollusk with a tender texture, used in seafood dishes.",
+    "ingredientsCategory": "Meats and Seafood"
+  },
+  {
+    "name": "Chorizo",
+    "description": "Spicy sausage made from pork, seasoned with spices like paprika.",
+    "ingredientsCategory": "Meats and Seafood"
+  },
+  {
+    "name": "Shrimp Paste",
+    "description": "Fermented shrimp condiment, adds a strong salty flavor.",
+    "ingredientsCategory": "Meats and Seafood"
+  },
+  {
+    "name": "Bagoong",
+    "description": "Fermented shrimp or fish paste used in Filipino cuisine for a salty umami flavor.",
+    "ingredientsCategory": "Meats and Seafood"
+  },
+  {
+    "name": "Onion",
+    "description": "A staple vegetable with an aromatic flavor, used in various types.",
+    "ingredientsCategory": "Vegetables and Greens"
+  },
+  {
+    "name": "Garlic",
+    "description": "Pungent herb used to add robust flavor, known for health benefits.",
+    "ingredientsCategory": "Vegetables and Greens"
+  },
+  {
+    "name": "Bok Choy",
+    "description": "Chinese cabbage with a mild flavor, used in stir-fries and soups.",
+    "ingredientsCategory": "Vegetables and Greens"
+  },
+  {
+    "name": "Eggplant",
+    "description": "Purple vegetable with a spongy texture, absorbs flavors well.",
+    "ingredientsCategory": "Vegetables and Greens"
+  },
+  {
+    "name": "String Beans",
+    "description": "Crunchy beans, also known as green beans, add freshness to dishes.",
+    "ingredientsCategory": "Vegetables and Greens"
+  },
+  {
+    "name": "Green Onions",
+    "description": "Mild-flavored onions used as a garnish or in salads.",
+    "ingredientsCategory": "Vegetables and Greens"
+  },
+  {
+    "name": "Kangkong",
+    "description": "Water spinach with a slightly sweet flavor, used in Southeast Asian cuisine.",
+    "ingredientsCategory": "Vegetables and Greens"
+  },
+  {
+    "name": "Potatoes",
+    "description": "Starchy tubers used in various dishes, can be boiled, baked, mashed, or fried.",
+    "ingredientsCategory": "Vegetables and Greens"
+  },
+  {
+    "name": "Carrots",
+    "description": "Sweet root vegetables with a crunchy texture, used in both raw and cooked dishes.",
+    "ingredientsCategory": "Vegetables and Greens"
+  },
+  {
+    "name": "Green Peas",
+    "description": "Small, round vegetables with a sweet flavor and tender texture, used in soups and stews.",
+    "ingredientsCategory": "Vegetables and Greens"
+  },
+  {
+    "name": "Soy Sauce",
+    "description": "Fermented condiment made from soybeans and wheat, adds salty umami flavor.",
+    "ingredientsCategory": "Condiments and Sauces"
+  },
+  {
+    "name": "Vinegar",
+    "description": "Acidic liquid used for cooking and pickling, adds tanginess.",
+    "ingredientsCategory": "Condiments and Sauces"
+  },
+  {
+    "name": "Fish Sauce",
+    "description": "Fermented fish condiment, adds salty umami flavor, especially in Southeast Asian cuisine.",
+    "ingredientsCategory": "Condiments and Sauces"
+  },
+  {
+    "name": "Oyster Sauce",
+    "description": "Savory sauce made from oyster extracts, adds umami flavor.",
+    "ingredientsCategory": "Condiments and Sauces"
+  },
+  {
+    "name": "Tomato Sauce",
+    "description": "Cooked sauce from tomatoes, used as a base in dishes like pasta and stews.",
+    "ingredientsCategory": "Condiments and Sauces"
+  },
+  {
+    "name": "Pancit Malabon Sauce",
+    "description": "Rich sauce with shrimp and spices, used to coat Pancit Malabon noodles.",
+    "ingredientsCategory": "Condiments and Sauces"
+  },
+  {
+    "name": "Rice",
+    "description": "Staple grain used as a base or side dish in many meals.",
+    "ingredientsCategory": "Noodles and Rice"
+  },
+  {
+    "name": "Pancit Malabon Noodles",
+    "description": "Thick rice noodles used in Pancit Malabon, a Filipino noodle dish.",
+    "ingredientsCategory": "Noodles and Rice"
+  },
+  {
+    "name": "Pancit Canton Noodles",
+    "description": "Thin egg noodles used in Pancit Canton, a Filipino stir-fried noodle dish.",
+    "ingredientsCategory": "Noodles and Rice"
+  },
+  {
+    "name": "Water",
+    "description": "Fundamental liquid used to hydrate ingredients and adjust dish consistency.",
+    "ingredientsCategory": "Liquids"
+  },
+  {
+    "name": "Dried Taro Leaves",
+    "description": "Used in cooking for unique flavor and texture, often rehydrated.",
+    "ingredientsCategory": "Special Ingredients"
+  },
+  {
+    "name": "Tamarind Paste",
+    "description": "Tangy paste from tamarind pods, adds sour and slightly sweet flavor.",
+    "ingredientsCategory": "Special Ingredients"
+  }
+]
