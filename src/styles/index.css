@@ -10,6 +10,29 @@
   --font-fam-4: "Shantell Sans", sans-serif;
   --font-fam-5: "Hepta Slab", serif;
 
+  
+  --font-body: "Inter", sans-serif; /* p span*/
+  --font-body-size: clamp(0.9rem, 1.5vw, 1rem);
+  
+  --font-body: "Inter", sans-serif; /* p span smalls*/
+  --font-body-size: clamp(0.8rem, 1,5vw, 0.844rem);
+
+  --font-title: "Abril Fatface", serif; /* h1 */
+  --font-title-size: clamp(2.86rem, 3.5vw, 2.986rem);
+
+  --font-heading: "Shantell Sans", sans-serif; /* h2 */
+  --font-heading: clamp(2.388rem, 3vw, 2.488rem);
+
+  --font-subheading: "Vollkorn", serif; /* h3 */
+  --font-subheading-size: clamp(1.974rem, 2.5vw, 2.074rem);
+  
+  --font-subheading-title: "Vollkorn", serif; /* h3 */
+  --font-subheading-size-title: clamp(1.422rem, 1.8vw, 1.5rem);
+
+  --font-btn: "Poppins", sans-serif;
+  --font-btn-size: clamp(0.9rem, 1.5vw, 1rem);
+  
+  
   --primary-color: #1e212b;
   --secondary-color: #da2c38;
   --third-color: #4d8b31;

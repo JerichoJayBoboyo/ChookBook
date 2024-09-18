@@ -52,6 +52,11 @@ footer {
 .icons:hover {
     color: var(--secondary-color);
 }
+.subscribeCntr {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
 .emailInput {
     padding: 15px 15px 15px 25px;
     background: none;
@@ -81,6 +86,7 @@ footer {
 .footerSubscribe span {
     font-size: clamp(0.9rem, 1.2vw, 1.1rem);
     font-family: var(--font-fam-3);
+    width: 80%;
 }
 .footerOtherSites {
     display: flex;

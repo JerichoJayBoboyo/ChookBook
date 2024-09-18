@@ -12,8 +12,10 @@
 }
 .ingredientsTitle {
     text-align: center;
-    font-size: clamp(1.8rem, 5vw, 3.5rem);
-    font-family: var(--font-fam-2);
+    font-size: var(--font-title-size);
+    font-family: var(--font-title);
+    line-height: 2.5rem;
+    margin-bottom: 10px;
     font-weight: 550;
     text-transform: uppercase;
     letter-spacing: 10px;

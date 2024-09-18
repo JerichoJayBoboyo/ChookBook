@@ -12,36 +12,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
-.promotionMainCntr::before {
-    content: "";
-    display: block;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 220px;
-    left: 20px;
-    background-image: url('/images/leaf.png');
-    background-size: cover; 
-    background-repeat: no-repeat;
-    filter: blur(2px); 
-    transform: rotate(20deg);
-    z-index: 2;
-}
-.promotionMainCntr::after {
-    content: "";
-    display: block;
-    z-index: 2;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    bottom: 250px;
-    right: 50px;
-    background-image: url('/images/leaf.png');
-    background-size: cover; 
-    background-repeat: no-repeat;
-    filter: blur(2px); 
-    transform: rotate(260deg);
-}
 .promotionTxt {
     font-size: clamp(1rem, 1.5vw, 1.4rem);
     align-items: center;
@@ -50,7 +20,10 @@
     align-content: center;
     color: white;
     font-family: var(--font-fam-4);
-    background: var(--third-color);
+    background: var(--primary-color);
+}
+.promotionTxt:nth-of-type(4) {
+    background: var(--third-color); 
 }
 .promHighlightTxt {
     color:  var(--fifth-color);

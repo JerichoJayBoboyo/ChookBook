@@ -49,19 +49,26 @@
     width: 100%;
 }
 .tasteOfPhilippinesTxt {
-    font-size: clamp(2.3rem, 3vw, 4rem);
-    font-family: var(--font-fam-4);
+    font-size: var(--font-title-size);
+    font-family: var(--font-title);
+    letter-spacing: 3px;
+    line-height: 3rem;
+    font-weight: 550;
+    text-transform: uppercase;
 }
 .qoute {
-    font-size: clamp(1.1rem, 2vw, 1.3rem);
-    font-family: var(--font-fam-3);
+    font-size: var(--font-subheading-size);
+    font-family: var(--font-subheading);
+    line-height: 2rem;
+    font-weight: 400;
 }
 .cookBtn {
-    padding: 20px;
+    padding: 10px 15px;
     text-transform: uppercase;
     border: none;
-    font-family: var(--font-fam-1);
+    font-family: var(--font-btn);
     background: var(--secondary-color);
+    font-size: var(--font-btn-size);
     color: white;
     font-weight: 600;
     letter-spacing: 2px;
@@ -90,7 +97,7 @@
         object-fit: cover;
     }
     .tasteOfPhilippinesTxt {
-        line-height: 2.2rem;
+        line-height: 2.5rem;
     }
     .qoute, .tasteOfPhilippinesTxt {
         text-align: center;

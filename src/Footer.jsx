@@ -101,20 +101,22 @@ function Footer() {
         </div>
 
         <div className={FooterCSS.footerSubscribe}>
-          <input
-            type="email"
-            placeholder="Input your email"
-            className={FooterCSS.emailInput}
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <button
-            type="button"
-            className={FooterCSS.submitBtn}
-            onClick={handleSubscribe}
-          >
-            Subscribe
-          </button>
+          <div className={FooterCSS.subscribeCntr}>
+            <input
+              type="email"
+              placeholder="Input your email"
+              className={FooterCSS.emailInput}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <button
+              type="button"
+              className={FooterCSS.submitBtn}
+              onClick={handleSubscribe}
+            >
+              Subscribe
+            </button>
+          </div>
           <span>
             Get latest updates on our blog and posts so you won't miss delicious
             recipes
